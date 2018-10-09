@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/backgrond/1.png);
+}
+
+#logo{
+    width: 40%;
+    height: auto;
+}
+
+#centerlogo {
+    width: 40%;
+    height: auto;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    white-space: nowrap;
+    font-size: 1.3em;
+}
+
+.content {
+    position: relative;
+    top: 150px;
+}
