@@ -62,6 +62,58 @@ a.navbar-brand {
     margin-left: 10px;
 }
 
+/* ============== SIDENAV ============== */
+
+#sideNav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    z-index: 2030;
+}
+
+#sideNav img {
+    max-width: 80px;
+}
+
+.menuImg {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#navbarSideMenu {
+    background-color: #1f1f1f;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+}
+
+#sideNav .nav-link {
+    color: grey;
+    white-space: nowrap;
+    font-size: 1.5em;
+}
+
+#sideNav .nav-link:hover,
+#sideNav .nav-link:active,
+#sideNav .nav-link:focus,
+#sideNav .li.nav-item a.nav-link:hover,
+#sideNav .li.nav-item a.nav-link:focus,
+#sideNav .li.nav-item a.nav-link:active {
+    font-size: 1.5em;
+    color: white;
+    transition: color .2s;
+}
+
+#sideNav .li.nav-item a.nav-link, 
+#sideNav .li.nav-item a.nav-link:focus {
+    color: gray;
+}
+
 /* ============== SECTIONS ============== */
 
 section {
@@ -117,7 +169,7 @@ h1 {
 }
 
 footer {
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 /* ============== MEDIA QUERIES ============== */
