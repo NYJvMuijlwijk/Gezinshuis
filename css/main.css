@@ -1,0 +1,170 @@
+/* ============== GLOBAL ============== */
+
+body {
+    background-image: url(../img/backgrond/2.jpg);
+    background-attachment: fixed;
+}
+
+/* ============== NAVBAR ============== */
+
+#mainNav {
+    background-color: rgba(255, 255, 255, .8);
+    height: 100px;
+    border-bottom: solid 1px #777;
+    padding: 10px 20%;
+}
+
+#logo {
+    max-width: 40%;
+    max-height: 150px;
+}
+
+.navbar-collapse {
+    max-width: 90%;
+}
+
+.collapsing,
+.show {
+    background-color: #fff;
+    border: solid 1px #777;
+    border-radius: 3px;
+}
+
+a.navbar-brand {
+    max-width: 50%;
+    padding: 0;
+    margin: 0;  
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: grey;
+    white-space: nowrap;
+    font-size: 2em;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:focus,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:active {
+    font-size: 2em;
+    color: black;
+    transition: color .2s;
+}
+
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link, 
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:focus {
+    color: gray;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+/* ============== SECTIONS ============== */
+
+section {
+    padding: 20px;
+}
+
+section:first-of-type {
+    margin-top: 100px;
+}
+
+.header {
+    padding: 100px 0;
+}
+
+#home {
+    background-color: #fff;
+}
+
+/* ============== CONTAINER ============== */
+
+.content {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 50px 10px;
+    border-radius: 3px;
+}
+
+/* ============== HEADINGS ============== */
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* ============== FORMS ============== */
+
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.alert p {
+    margin: 0;
+}
+
+/* ============== FOOTER ============== */
+
+.footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 0;
+    font-size: .9em;
+    color: #777;
+}
+
+footer {
+    padding: 5px 0;
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+
+@media only screen and (max-width: 1024px) {
+
+    #mainNav {
+        padding: 0 5%;
+    }
+
+    .content {
+        padding: 30px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .header {
+        padding: 50px 0 30px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .content {
+        padding: 15px 15px;
+    }
+
+    .header {
+        padding: 50px 0 0;
+    }
+
+    a.navbar-brand {
+        max-width: 80%;
+    }
+
+    #logo {
+        max-width: 80%;
+        max-height: 60px;
+    }
+
+}
+
