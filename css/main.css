@@ -3,6 +3,7 @@
 body {
     background-image: url(../img/backgrond/2.jpg);
     background-attachment: fixed;
+    /* min-height: 100%; */
 }
 
 /* ============== NAVBAR ============== */
@@ -40,6 +41,7 @@ a.navbar-brand {
     color: grey;
     white-space: nowrap;
     font-size: 2em;
+    text-transform: lowercase;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover,
@@ -65,16 +67,32 @@ a.navbar-brand {
 /* ============== SIDENAV ============== */
 
 #sideNav {
-    position: fixed;
+    /* position: fixed; */
     height: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 100px;
-    z-index: 2030;
+    /* top: 0; */
+    /* left: 0; */
+    padding: 0;
+    /* z-index: 2030; */
+    width: 100%;
+    background-color: #1f1f1f;
+}
+
+#sideNav .navbar-toggler {
+    background-color: #555555;
 }
 
 #sideNav img {
     max-width: 80px;
+}
+
+#sideNav .link-item {
+    width: 80%;
+    margin: 0;
+}
+
+#sideNav .link-icon {
+    width: 10%;
+    margin-right: 5px;
 }
 
 .menuImg {
@@ -85,11 +103,12 @@ a.navbar-brand {
 
 #navbarSideMenu {
     background-color: #1f1f1f;
-    position: fixed;
+    /* position: fixed; */
     height: 100%;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     align-items: flex-start;
+    /* margin-right: 15%; */
 }
 
 #sideNav .nav-link {
@@ -132,12 +151,32 @@ section:first-of-type {
     background-color: #fff;
 }
 
+.userpage {
+    padding: 0;
+}
+
 /* ============== CONTAINER ============== */
 
 .content {
     background-color: rgba(255, 255, 255, .9);
     padding: 50px 10px;
     border-radius: 3px;
+}
+
+/* ============== USER PAGE ============== */
+
+#user {
+    margin: 0;
+    padding: 0;
+}
+
+#user #mainNav {
+    position: static;
+    margin-bottom: 100px;
+}
+
+#user .navbar-collapse {
+    max-width: none;
 }
 
 /* ============== HEADINGS ============== */

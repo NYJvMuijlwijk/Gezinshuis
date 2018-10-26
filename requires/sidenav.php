@@ -4,26 +4,36 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    
-
     <div class="collapse navbar-collapse" id="navbarSideMenu">
         <ul class="nav flex-column">
             <li class="nav-item">
                 <div class="menuImg">
-                    <img src="../img/center/icon-black-white.png" alt="gezinshuis regterink icon">
+                    <img src="./img/center/icon-black-white.png" alt="gezinshuis regterink icon">
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="profiel.php">Profiel</a>
+                <div class="row">
+                    <a class="nav-link js-scroll-trigger link-icon" href="profiel.php"><i class="fas fa-user"></i></a>
+                    <a class="nav-link js-scroll-trigger link-item" href="profiel.php">Profiel</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Activiteiten</a>
+                <div class="row">
+                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-table-tennis"></i></a>
+                    <a class="nav-link js-scroll-trigger link-item" href="#">Activiteiten</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Behandelplannen</a>
+                <div class="row">
+                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-file-alt"></i></a>
+                    <a class="nav-link js-scroll-trigger link-item" href="#">Behandelplannen</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Gebruikersprofielen</a>
+                <div class="row">
+                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-users"></i></a>
+                    <a class="nav-link js-scroll-trigger link-item" href="#">Gebruikersprofielen</a>
+                </div>
             </li>
         </ul>
     </div>

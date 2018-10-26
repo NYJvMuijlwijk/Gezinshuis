@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <?php 
     
-    $_SESSION['loginstatus'] ? $loginStatus = "Uitloggen" : $loginStatus = "Inloggen";
+    $_SESSION['loginstatus'] ? $loginStatus = "uitloggen" : $loginStatus = "inloggen";
     $_SESSION['loginstatus'] ? $loginStatusLink = "logout" : $loginStatusLink = "login";
 
 ?>
@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarTopMenu">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.php">Home</a>
+                <a class="nav-link js-scroll-trigger" href="index.php">home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="about.php">Over ons</a>
+                <a class="nav-link js-scroll-trigger" href="about.php">over ons</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="contact.php">Contact</a>
+                <a class="nav-link js-scroll-trigger" href="contact.php">contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="<?= $loginStatusLink; ?>.php"><?= $loginStatus; ?></a>
