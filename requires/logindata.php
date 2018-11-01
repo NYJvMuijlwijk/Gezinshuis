@@ -25,7 +25,7 @@ if($_POST) {
         $_SESSION['user'] = $account;
         $_SESSION['loginstatus'] = true;
         
-        header('Location: ./user.php');
+        header('Location: ./databaseprofiel2.php');
 
     }
     else
