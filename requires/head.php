@@ -30,6 +30,12 @@
 
   <body id="page-top">
 
-  <?php require 'requires/nav.php'; ?>
+  <?php
+    require_once 'requires/nav.php';
 
-  <?php session_start(); ?>
+    //adds the Auth & encryption classes
+    require "Helper.php";
+    require "Verify.php";
+
+  session_start();
+  ?>
