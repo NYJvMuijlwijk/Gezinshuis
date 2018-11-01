@@ -30,4 +30,6 @@
 
   <body id="page-top">
 
+  <?php require 'requires/nav.php'; ?>
+
   <?php session_start(); ?>

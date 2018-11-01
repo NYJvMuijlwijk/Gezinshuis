@@ -6,7 +6,7 @@
 
               <hr>
 
-              Created by Niek van Muylwijck | &copy; 2018
+              Created by Groep 3 | &copy; 2018
 
               <hr>
 

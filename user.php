@@ -1,31 +1,19 @@
 <?php require 'requires/head.php'; ?>
+<?php require 'requires/sidenav.php'; ?>
 
 <section id="user">
     <div class="container-fluid">
-
         <div class="row">
-
-            <div class="col-2 userpage">
-                
-                <?php require 'requires/sidenav.php'; ?>
-
-            </div>
-
-            <div class="col-10 userpage">
-            
-                <?php require 'requires/nav.php'; ?>
+            <div class="col-lg-10 mx-auto">
 
                 <div class="container content">
                     Welkom <?= $_SESSION["user"]->fname ." ". $_SESSION["user"]->tussenvoegsel ." ". $_SESSION["user"]->lname;?>
                 </div>
 
-                <?php require 'requires/foot.php'; ?>
-
             </div>
-
         </div>
-
     </div>
     
 </section>
 
+<?php require 'requires/foot.php'; ?>

@@ -1,5 +1,4 @@
 <?php require 'requires/head.php'; ?>
-<?php require 'requires/nav.php'; ?>
 
 <section class="header">
   <header class="text-center text-white">

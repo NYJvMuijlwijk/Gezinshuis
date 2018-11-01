@@ -1,5 +1,4 @@
 <?php require 'requires/head.php'; ?>
-<?php require 'requires/nav.php'; ?>
 
 <section class="main">
     <div class="container content">
