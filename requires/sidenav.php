@@ -8,7 +8,7 @@
         <ul class="nav flex-column">
             <li class="nav-item">
                 <div class="menuImg">
-                    <img src="./img/center/icon-black-white.png" alt="gezinshuis regterink icon">
+                    <a href="user.php"><img src="./img/center/icon-black-white.png" alt="gezinshuis regterink icon"></a>
                 </div>
             </li>
             <li class="nav-item">
@@ -42,7 +42,10 @@
                 <!-- </div> -->
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="galerij.php">Galerij</a>
+                <!-- <div class="row"> -->
+                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-image"></i></a>
+                    <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Media</a> -->
+                <!-- </div> -->
             </li>
         </ul>
     </div>

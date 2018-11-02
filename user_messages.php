@@ -11,7 +11,7 @@
 ?>
 
 <section id="user">
-    <div class="container-fluid">
+    <div class="container-fluid content">
         <div class="row">
             <div class="col-lg-10 mx-auto">
 

@@ -1,4 +1,5 @@
-<?php require './requires/profielpage.php';
+<?php require 'requires/head.php'; ?>
+<?php require 'requires/profielpage.php'; 
 
 $profile = new Profile();
 
@@ -19,3 +20,4 @@ if (isset($_POST) && isset($_POST["updateUser"])){
 $user = $profile->getUser();
 
 require 'views/profiel.view.php';
+require 'requires/foot.php'; ?>
