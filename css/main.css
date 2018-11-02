@@ -212,8 +212,9 @@ section:first-of-type {
     column-count: 3;
 }
 
-img {
+.user img { 
     display: block;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -229,16 +230,16 @@ img {
 
 /* ============== USER PAGE ============== */
 
-#user {
+.user {
     margin-left: 70px;
 }
 
-#user #mainNav {
+.user #mainNav {
     position: static;
     margin-bottom: 100px;
 }
 
-#user .navbar-collapse {
+.user .navbar-collapse {
     max-width: none;
 }
 
@@ -286,7 +287,7 @@ footer {
         padding: 0 5%;
     }
 
-    #user #mainNav {
+    .user #mainNav {
         padding: none;
     }
 
@@ -294,12 +295,18 @@ footer {
         width: 50px;
     }
 
-    #user {
+    .user {
         margin-left: 50px;
     }
 
     .content {
         padding: 30px 10px;
+    }
+
+    .resize {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
     }
 
 }
@@ -314,6 +321,11 @@ footer {
         padding: 50px 0 30px;
     }
 
+    .resize {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -323,7 +335,7 @@ footer {
         font-size: .8em;
     }
 
-    #user {
+    .user {
         margin-left: 30px;
     }
 

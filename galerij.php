@@ -11,7 +11,7 @@
     $value1 = $pdo->fetchall(PDO::FETCH_ASSOC);
     ?>
     
-    <section>
+    <section class="user">
         <div class="container content_gallery" style="text-align: center;">
         
         <h1>upload</h1>
@@ -25,8 +25,8 @@
     
         </div>
     </section>
+    <section class='user'>
 
-    <section>
         <div class="container content_gallery" style="text-align: center;">
             
         <h1>galerij</h1>

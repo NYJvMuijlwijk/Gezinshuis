@@ -2,7 +2,7 @@
 <?php require 'requires/sidenav.php'; ?>
 
 
-<section id="user">
+<section class="user">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-10 mx-auto">
