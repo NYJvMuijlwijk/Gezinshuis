@@ -1,4 +1,5 @@
 <?php require 'requires/head.php'; ?>
+<?php require 'requires/connection.php'; ?>
 
 <section class="main">
     <div class="container content">
@@ -13,41 +14,32 @@
 
                 <br>
 
-                <!-- Email functionality -->
                 <?php
-                    // set variables
-                    $to         = "microniek@live.nl";
-                    $subject    = "[Contact Form] | " . $_POST["inputTopic"];
-                    $sender     = $_POST['inputEmail'];
-                    $message    = wordwrap(str_replace("\n.", "\n..", $_POST["inputMessage"]), 70, "\r\n");
-                    $headers    =   "From: $sender" . "\r\n" .
-                                    'X-Mailer: PHP/' . phpversion();
-                
-                    // notification logic
-                    if (isset($_POST["submitContact"])) {
-                        
-                        // send mail, store result
-                        $mail = mail($to, $subject, $message, $headers);
+                    // send message to database
+                    if (isset($_POST['submitContact'])){
+                        // prepare query
+                        $usermemail = $_POST['inputEmail'];
+                        $topic = $_POST['inputTopic'];
+                        $message = $_POST['inputMessage'];
 
-                        // echo "<div class='col-sm-8 alert alert-success'><p><strong>Mail content:</strong></p><p>Sender: $sender <br> Subject: $subject <br> Message: $message <br> Headers: $headers </p></div>";
+                        $query = $connection->prepare("INSERT INTO messages (user_email, topic, message) VALUES ('$usermemail', '$topic', '$message')");
 
-                        if($mail) 
-                        {
-                            echo "<div class='col-sm-8 alert alert-success'><p>Mail succesfully sent!</p></div>";
+                        // execute query
+                        try {
+                            $query->execute();
+                            // succes message ?>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Bericht verzonden!</strong> Uw bericht is met succes door ons ontvangen. U hoort binnen 3 dagen van ons terug.
+                            </div> <?php
                         }
-                        else 
-                        {
-                            echo "<div class='col-sm-8 alert alert-warning'><p>Something went wrong sendgin your email</p></div>";
-        
-                            // dump variable
-                            var_dump($mail);
+                        catch(PDOException $e) {
+                            echo $e->getmessage(); 
+                            // error message ?>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Oeps!</strong> Er ging iets mis bij het verzenden van uw bericht.
+                            </div> <?php
                         }
-    
                     }
-
-                    
-                    
-
                 ?>
 
                 <!-- Contact form -->
@@ -72,9 +64,6 @@
                     </div>
 
                 </form>
-
-                
-
             </div>
         </div>
     </div>

@@ -3,6 +3,7 @@
 body {
     background-image: url(../img/backgrond/2.jpg);
     background-attachment: fixed;
+    /* min-height: 100%; */
 }
 
 /* ============== NAVBAR ============== */
@@ -15,12 +16,13 @@ body {
 }
 
 #logo {
-    max-width: 40%;
-    max-height: 150px;
+    /* max-width: 40%; */
+    max-height: 60px;
 }
 
 .navbar-collapse {
     max-width: 90%;
+    z-index: 1;
 }
 
 .collapsing,
@@ -40,6 +42,7 @@ a.navbar-brand {
     color: grey;
     white-space: nowrap;
     font-size: 2em;
+    text-transform: lowercase;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover,
@@ -65,21 +68,47 @@ a.navbar-brand {
 /* ============== SIDENAV ============== */
 
 #sideNav {
-    position: fixed;
     height: 100%;
+    padding: 0;
+    position: fixed;
+    width: 70px;
     top: 0;
     left: 0;
-    padding-top: 100px;
-    z-index: 2030;
+    background-color: #1f1f1f;
+    text-align: center;
+    z-index: 2000;
+}
+
+#sideNav .navbar-toggler {
+    background-color: #555555;
 }
 
 #sideNav img {
-    max-width: 80px;
+    max-width: 40px;
 }
 
+/* #sideNav .nav-item {
+    max-height: 52px;    
+}
+
+#sideNav .nav-item:first-of-type {
+    max-height: none;
+} */
+
+#sideNav .link-item {
+    width: 80%;
+    margin: 0;
+}
+
+/* #sideNav .link-icon {
+    width: 10%;
+    margin-right: 5px;
+    font-size: 2em;
+} */
+
 .menuImg {
-    padding: 20px 0;
-    margin-bottom: 30px;
+    /* padding: 20px 0; */
+    margin-bottom: 70px;
     text-align: center;
 }
 
@@ -90,12 +119,19 @@ a.navbar-brand {
     top: 0;
     left: 0;
     align-items: flex-start;
+    /* margin-right: 15%; */
+}
+
+#navbarSideMenu ul {
+    margin-top: 30px;
+    /* align-self: center; */
 }
 
 #sideNav .nav-link {
     color: grey;
     white-space: nowrap;
     font-size: 1.5em;
+    margin-left: 0;
 }
 
 #sideNav .nav-link:hover,
@@ -132,6 +168,10 @@ section:first-of-type {
     background-color: #fff;
 }
 
+.userpage {
+    padding: 0;
+}
+
 /* ============== CONTAINER ============== */
 
 .content {
@@ -139,6 +179,8 @@ section:first-of-type {
     padding: 50px 10px;
     border-radius: 3px;
 }
+
+/* ============== GALERY ============== */
 
 .content_gallery {
     background-color: rgba(255, 255, 255, .5);
@@ -160,6 +202,30 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+.profile-img{
+    text-align: center;
+}
+
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+
+/* ============== USER PAGE ============== */
+
+#user {
+    margin-left: 70px;
+}
+
+#user #mainNav {
+    position: static;
+    margin-bottom: 100px;
+}
+
+#user .navbar-collapse {
+    max-width: none;
 }
 
 /* ============== HEADINGS ============== */
@@ -206,6 +272,18 @@ footer {
         padding: 0 5%;
     }
 
+    #user #mainNav {
+        padding: none;
+    }
+
+    #sideNav {
+        width: 50px;
+    }
+
+    #user {
+        margin-left: 50px;
+    }
+
     .content {
         padding: 30px 10px;
     }
@@ -225,6 +303,36 @@ footer {
 }
 
 @media only screen and (max-width: 360px) {
+
+    #sideNav {
+        width: 30px;
+        font-size: .8em;
+    }
+
+    #user {
+        margin-left: 30px;
+    }
+
+    #navbarSideMenu {
+        width: 30px;
+    }
+
+    .navbar-collapse {
+        margin-left: 30px;
+        font-size: .6em;        
+    }
+
+    .menuImg {
+        margin-bottom: 30px;
+    }
+
+    .menuImg img {
+        width: 30px;
+    }
+
+    .nav-link {
+        padding: 0.2rem 0;
+    }
 
     .content {
         padding: 15px 15px;
