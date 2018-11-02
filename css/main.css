@@ -180,6 +180,39 @@ section:first-of-type {
     border-radius: 3px;
 }
 
+/* ============== GALERY ============== */
+
+.content_gallery {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 50px 40px;
+    border-radius: 7px;
+}
+
+.box {
+    margin-bottom: 25px;
+}
+
+.resize {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.profile-img{
+    text-align: center;
+}
+
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+
 /* ============== USER PAGE ============== */
 
 #user {
@@ -219,12 +252,15 @@ h1 {
     background-color: #ccc;
     text-align: center;
     padding: 0;
+    margin: 0;
     font-size: .9em;
     color: #777;
+    bottom: 0;
 }
 
 footer {
     padding: 10px 0;
+    bottom: 0;
 }
 
 /* ============== MEDIA QUERIES ============== */
@@ -315,12 +351,4 @@ footer {
         max-height: 60px;
     }
 
-}
-
-.profile-img{
-    text-align: center;
-}
-.profile-img img{
-    width: 70%;
-    height: 100%;
 }

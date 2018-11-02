@@ -41,6 +41,9 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Gebruikersprofielen</a> -->
                 <!-- </div> -->
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="galerij.php">Galerij</a>
+            </li>
         </ul>
     </div>
 
