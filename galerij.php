@@ -12,7 +12,7 @@
 ?>
 
 <section>
-    <div class="container content_gallery"><h1 align="center"> galerij </h1>
+    <div class="container content_gallery" style="text-align: center;"><h1> galerij </h1>
         <div class="resize">
             <div>
                 <?php
@@ -35,7 +35,7 @@
 </section>
 
 <section>
-    <div class="container content_gallery"><h1 align="center"> upload </h1>
+    <div class="container content_gallery" style="text-align: center;"><h1> upload </h1>
         <div>
             <div>
                 <form method="post" enctype="multipart/form-data" action="formaction/upload.php">

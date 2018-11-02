@@ -11,37 +11,43 @@
                     <a href="user.php"><img src="./img/center/icon-black-white.png" alt="gezinshuis regterink icon"></a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Profielpagina">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="profiel.php"><i class="fas fa-user"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="profiel.php">Profiel</a> -->
                 <!-- </div> -->
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Berichten">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="user_messages.php"><i class="fas fa-envelope"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="user_messages.php">Berichten</a> -->
                 <!-- </div> -->
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Activiteiten">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-table-tennis"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Activiteiten</a> -->
                 <!-- </div> -->
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Behandelplannen">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-file-alt"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Behandelplannen</a> -->
                 <!-- </div> -->
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Gebruikersprofielen">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-users"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Gebruikersprofielen</a> -->
                 <!-- </div> -->
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="tooltip"
+        data-placement="top" title="Media">
                 <!-- <div class="row"> -->
                     <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-image"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Media</a> -->

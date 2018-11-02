@@ -150,6 +150,20 @@ a.navbar-brand {
     color: gray;
 }
 
+.tooltip {
+    z-index: 5000;
+    background-color: transparent;
+    border: none;
+}
+
+.tooltip .tooltip-inner {
+    background-color: black;
+}
+
+.tooltip .tooltip-arrow {
+    background-color: black;
+}
+
 /* ============== SECTIONS ============== */
 
 section {
