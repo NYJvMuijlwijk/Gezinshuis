@@ -25,6 +25,9 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#">Gebruikersprofielen</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="galerij.php">Galerij</a>
+            </li>
         </ul>
     </div>
 
