@@ -49,7 +49,7 @@
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Media">
                 <!-- <div class="row"> -->
-                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-image"></i></a>
+                    <a class="nav-link js-scroll-trigger link-icon" href="galerij.php"><i class="fas fa-image"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Media</a> -->
                 <!-- </div> -->
             </li>
