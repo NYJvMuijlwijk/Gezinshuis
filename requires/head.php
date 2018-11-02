@@ -31,9 +31,14 @@
   </head>
 
   <body id="page-top">
-
-  <?php if (session_status() == PHP_SESSION_NONE) {
+    
+  <?php
+    //adds the Auth & encryption classes
+    require "Helper.php";
+    require "Verify.php";
+             
+    if (session_status() == PHP_SESSION_NONE) {
       session_start();
   } ?>
-
-  <?php require 'requires/nav.php'; ?>
+             
+  <?php require_once 'requires/nav.php'; ?>

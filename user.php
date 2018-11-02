@@ -1,6 +1,7 @@
 <?php require 'requires/head.php'; ?>
 <?php require 'requires/sidenav.php'; ?>
 
+
 <section id="user">
     <div class="container-fluid">
         <div class="row">
