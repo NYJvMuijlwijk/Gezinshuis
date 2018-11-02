@@ -1,18 +1,21 @@
 <?php require 'requires/head.php'; ?>
 <?php require 'requires/sidenav.php'; ?>
-<?php $database = new pdo('mysql:host=127.0.0.1;dbname=<br/>', '<br/>', '<br/>'); ?>
+<?php require 'requires/connection.php'; ?>
 
 <?php
     /**
      * Database fetch all images
      */
-        $pdo = $database->prepare('SELECT image_file FROM images');
+        $pdo = $connection->prepare('SELECT file FROM images');
         $pdo->execute();
         $value1 = $pdo->fetchall(PDO::FETCH_ASSOC);
 ?>
 
 <section>
-    <div class="container content_gallery" style="text-align: center;"><h1> galerij </h1>
+    <div class="container content_gallery" style="text-align: center;">
+        
+    <h1>galerij</h1>
+
         <div class="resize">
             <div>
                 <?php
@@ -35,15 +38,17 @@
 </section>
 
 <section>
-    <div class="container content_gallery" style="text-align: center;"><h1> upload </h1>
-        <div>
+    <div class="container content_gallery" style="text-align: center;">
+    
+    <h1>upload</h1>
+
             <div>
                 <form method="post" enctype="multipart/form-data" action="formaction/upload.php">
-                    <input type="file" name="newimage"> <br/><br/>
+                    <input type="file" name="newimage">
                     <input type="submit" name="imagesubmit" value="Upload">
                 </form>
             </div>
-        </div>
+
     </div>
 </section>
 
