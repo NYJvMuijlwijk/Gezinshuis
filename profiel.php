@@ -1,5 +1,6 @@
 <?php require 'requires/head.php'; ?>
 <?php require 'requires/profielpage.php'; 
+require 'requires/sidenav.php';
 
 $profile = new Profile();
 
