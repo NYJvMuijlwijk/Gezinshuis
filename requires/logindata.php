@@ -28,7 +28,6 @@ if($_POST) {
         // set encryption keys
         getKeys();
 
-
         header('Location: ./user.php');
 
     }

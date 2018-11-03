@@ -16,8 +16,8 @@ if(verifyRole(1)) {
 
 ?>
 
-<section id="user">
-    <div class="container-fluid">
+<section class="user">
+    <div class="container-fluid content">
         <div class="row">
             <div class="col-lg-10 mx-auto">
 
