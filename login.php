@@ -18,6 +18,13 @@
                             <label for="password">Wachtwoord:</label>
                             <input class="form-control" name="password" type="password" required>
                         </div>
+                        <div class="col-sm-10">
+                        <select name="role">
+                            <option value="profiles_owners">Admin</option>
+                            <option value="profiles_doctors">Invaller/Stagiaire</option>
+                            <option value="profiles_parents">Ouder</option>
+                        </select>
+                        </div>
                     </div>
 
                     <div class = "row">
