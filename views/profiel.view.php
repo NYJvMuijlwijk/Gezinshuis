@@ -1,5 +1,3 @@
-<?php require 'requires/head.php'; ?>
-
 <section class="main">
     <div class="container content">
         <div class="row">
@@ -8,21 +6,21 @@
             </div>
             <div class="col-11">
                 <div class="container emp-profile">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="profile-img">
-                                    <img src="./img/profile.png" alt=""/>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="profile-img">
+                                <img src="./img/profile.png" alt=""/>
                             </div>
-                            <div class="col-md-8">
-                                <div class="profile-head">
-                                    <h5>
-                                        <?php
-                                        echo $user->fname . " " . $user->lname;
-                                        ?>
-                                    </h5>
-                                </div>
-                                <div class="updateUser">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="profile-head">
+                                <h5>
+                                    <?php
+                                    echo $user->fname . " " . $user->lname;
+                                    ?>
+                                </h5>
+                            </div>
+                            <div class="updateUser">
                                 <form action="databaseprofiel2.php" method="post">
                                     <div class="form-group row">
                                         <label for="usernameChange" class="col-sm-3 col-form-label">Gebruikersnaam:</label>
@@ -50,35 +48,26 @@
                                     </div>
                                     <input class="btn btn-secondary" name="updateUser" type="submit" value="submit">
                                 </form>
-                                </div>
+                            </div>
 
-                                <div class="showUser">
-                                <form>
-
-                                    <div class="form-group row">
-                                        <label for="usernameChange" class="col-sm-3 col-form-label">Gebruikersnaam</label>
-                                        <label class="col-sm-8 col-form-label"><?php echo $user->username; ?></label>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="emailChange" class="col-sm-3 col-form-label">Email</label>
-                                        <label class="col-sm-8 col-form-label"><?php echo $user->email; ?></label>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="mobileChange" class="col-sm-3 col-form-label">Mobiele nummer</label>
-                                        <label class="col-sm-8 col-form-label"><?php echo $user->mobile; ?></label>
-                                    </div>
-                                </form>
+                            <div class="showUser">
+                                <div class="form-group row">
+                                    <label for="usernameChange" class="col-sm-3 col-form-label">Gebruikersnaam</label>
+                                    <label class="col-sm-8 col-form-label"><?php echo $user->username; ?></label>
                                 </div>
-                             </div>
-                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <div class="form-group row">
+                                    <label for="emailChange" class="col-sm-3 col-form-label">Email</label>
+                                    <label class="col-sm-8 col-form-label"><?php echo $user->email; ?></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mobileChange" class="col-sm-3 col-form-label">Mobiele nummer</label>
+                                    <label class="col-sm-8 col-form-label"><?php echo $user->mobile; ?></label>
+                                </div>
+                            </div>
+                        </div><!-- col-md-8 -->
+                    </div><!-- row -->
+                </div><!-- emp-profile -->
+            </div><!-- col 11 -->
+        </div><!-- row -->
+    </div><!-- content -->
 </section>
-
-
-
-<script>
-
-</script>

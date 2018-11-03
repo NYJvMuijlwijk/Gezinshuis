@@ -20,5 +20,7 @@ if (isset($_POST) && isset($_POST["updateUser"])){
  */
 $user = $profile->getUser();
 
-require 'views/profiel.view.php';
-require 'requires/foot.php'; ?>
+
+require 'views/profiel.view.php'; 
+require 'requires/foot.php'; 
+?>
