@@ -1,6 +1,14 @@
-<?php require 'requires/head.php'; ?>
-<?php require 'requires/profielpage.php'; 
+<?php
+require './requires/profielpage.php';
+require 'requires/head.php';
+require 'requires/profielpage.php'; 
 require 'requires/sidenav.php';
+require "requires/help.php";
+
+// see if user is loggedin
+if(!$_SESSION['loginstatus']) {
+    header('Location: ./login.php');
+}
 
 $profile = new Profile();
 
