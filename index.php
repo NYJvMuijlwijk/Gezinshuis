@@ -35,4 +35,6 @@
 
 </section>
 
-<?php require 'requires/foot.php'; ?>
+<div class="footer">
+    <?php require 'requires/foot.php'; ?>
+</div>
