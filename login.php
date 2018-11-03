@@ -6,7 +6,6 @@ if($_SESSION['loginstatus']){
 }
 ?>
 
-
 <?php require 'requires/head.php'; ?>
 
 <section class="main">
