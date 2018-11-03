@@ -21,7 +21,7 @@
                                 </h5>
                             </div>
                             <div class="updateUser">
-                                <form action="databaseprofiel2.php" method="post">
+                                <form action="profiel.php" method="post">
                                     <div class="form-group row">
                                         <label for="usernameChange" class="col-sm-3 col-form-label">Gebruikersnaam:</label>
                                         <div class="col-sm-8">
