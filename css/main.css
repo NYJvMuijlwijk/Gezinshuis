@@ -65,6 +65,23 @@ a.navbar-brand {
     margin-left: 10px;
 }
 
+.navbar .navbar-collapse img {
+    width: 30px;
+}
+
+.navbar .dropdown {
+    text-transform: lowercase;
+    top: 15px;
+    background-color: transparent;
+}
+
+.navbar .dropdown a {
+    font-size: 2em;
+    color: gray;
+    background-color: transparent;
+    border: none;
+}
+
 /* ============== SIDENAV ============== */
 
 #sideNav {

@@ -1,11 +1,4 @@
 <!-- Navigation -->
-<?php 
-    
-    $_SESSION['loginstatus'] ? $loginStatus = "uitloggen" : $loginStatus = "inloggen";
-    $_SESSION['loginstatus'] ? $loginStatusLink = "logout" : $loginStatusLink = "login";
-
-?>
-
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     
     <a class="navbar-brand" href="index.php"><img id="logo" src="./img/small/1.png"></a>
@@ -26,9 +19,28 @@
                 <a class="nav-link js-scroll-trigger" href="contact.php">contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="<?= $loginStatusLink; ?>.php"><?= $loginStatus; ?></a>
+
+                <?php if(!$_SESSION['loginstatus']) { ?>
+                    <a class="nav-link js-scroll-trigger" href="login.php">Inloggen</a>
+                <?php } else { ?>
+                    
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?= $_SESSION['user']->fname; ?>
+                            <img src="img/profile.png" alt="profile picture">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="user.php">Gebruikersomgeving</a>
+                            <a class="dropdown-item" href="logout.php">Uitloggen</a>
+                        </div>
+                    </div>
+
+                <?php } ?>
+
             </li>
         </ul>
     </div>
+
 
 </nav>

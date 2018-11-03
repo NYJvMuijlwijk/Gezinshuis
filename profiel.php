@@ -20,6 +20,9 @@ if (isset($_POST) && isset($_POST["updateUser"])){
  */
 $user = $profile->getUser();
 
+// var_dump($user);
+
+// $_SESSION['user'] = $user['fname'];
 
 require 'views/profiel.view.php'; 
 require 'requires/foot.php'; 

@@ -1,12 +1,5 @@
 <?php
 /**
- * als session nog niet is gestart, start dit dan
- */
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-/**
  * Class Profile aangemaakt
  */
 class Profile
