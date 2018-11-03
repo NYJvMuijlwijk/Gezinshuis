@@ -5,6 +5,7 @@ require 'functions.php';
 $username = "";
 $password = "";
 
+
 //Na het drukken van de knop worden de variabelen gevuld met waardes en wordt er gecontroleerd
 if($_POST) {
 

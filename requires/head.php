@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +28,6 @@
 
   <body id="page-top">
 
-  <?php session_start(); ?>
+
 
   <?php require 'nav.php'; ?>
