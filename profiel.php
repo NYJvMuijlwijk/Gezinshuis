@@ -1,5 +1,5 @@
 <?php
-require './requires/profielpage.php';
+require 'requires/profielpage.php';
 require 'requires/head.php';
 require 'requires/profielpage.php'; 
 require 'requires/sidenav.php';
