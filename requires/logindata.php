@@ -1,6 +1,7 @@
 <?php
 require 'connection.php';
 require 'functions.php';
+require 'help.php';
 
 $username = "";
 $password = "";
@@ -24,8 +25,12 @@ if($_POST) {
         // login
         $_SESSION['user'] = $account;
         $_SESSION['loginstatus'] = true;
-        
-        header('Location: ./profiel.php');
+
+        // set encryption keys
+        getKeys();
+
+
+        header('Location: ./user.php');
 
     }
     else

@@ -1,4 +1,12 @@
-<?php require './requires/profielpage.php';
+<?php
+require "requires/help.php";
+// see if user is loggedin
+if(!$_SESSION['loginstatus']) {
+    header('Location: ./login.php');
+}
+
+
+require './requires/profielpage.php';
 
 $profile = new Profile();
 
