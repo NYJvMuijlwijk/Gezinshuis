@@ -35,7 +35,7 @@ body {
 a.navbar-brand {
     max-width: 50%;
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
@@ -56,7 +56,7 @@ a.navbar-brand {
     transition: color .2s;
 }
 
-#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link, 
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link,
 #mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:focus {
     color: gray;
 }
@@ -169,7 +169,7 @@ a.navbar-brand {
     transition: color .2s;
 }
 
-#sideNav .li.nav-item a.nav-link, 
+#sideNav .li.nav-item a.nav-link,
 #sideNav .li.nav-item a.nav-link:focus {
     color: gray;
 }
@@ -236,12 +236,12 @@ section:first-of-type {
     column-count: 3;
 }
 
-.user img { 
+.user img {
     display: block;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .profile-img{
     text-align: center;
@@ -353,11 +353,11 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    
+
     .hideable {
         display: none;
     }
-    
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -377,7 +377,7 @@ footer {
 
     .navbar-collapse {
         margin-left: 30px;
-        font-size: .6em;        
+        font-size: .6em;
     }
 
     .menuImg {
