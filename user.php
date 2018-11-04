@@ -1,3 +1,11 @@
+<?php
+require "requires/help.php";
+// see if user is loggedin
+if(!$_SESSION['loginstatus']){
+    header('Location: ./login.php');
+}?>
+
+
 <?php require 'requires/head.php'; ?>
 <?php require 'requires/sidenav.php'; ?>
 

@@ -32,12 +32,12 @@
                                 <strong>Bericht verzonden!</strong> Uw bericht is met succes door ons ontvangen. U hoort binnen 3 dagen van ons terug.
                             </div> <?php
                         }
-                        catch(PDOException $e) {
-                            echo $e->getmessage(); 
-                            // error message ?>
+                        catch(PDOException $e) { ?>
                             <div class="alert alert-success" role="alert">
                                 <strong>Oeps!</strong> Er ging iets mis bij het verzenden van uw bericht.
                             </div> <?php
+                            // error message
+                            echo $e->getmessage(); 
                         }
                     }
                 ?>

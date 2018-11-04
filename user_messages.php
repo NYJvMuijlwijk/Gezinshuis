@@ -1,3 +1,10 @@
+<?php
+// user need to be admin to read messages
+require "requires/help.php";
+
+if(verifyRole(1)) {
+?>
+
 <?php require 'requires/head.php'; ?>
 <?php require 'requires/connection.php'; ?>
 
@@ -50,3 +57,10 @@
 </section>
 
 <?php require 'requires/foot.php'; ?>
+
+<?php
+}elseif($_SESSION['loginstatus']){
+    header('Location: ./user.php');
+}else{
+    header('Location: ./login.php');
+}?>
