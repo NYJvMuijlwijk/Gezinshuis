@@ -26,7 +26,10 @@ if($_POST) {
         // login
         $_SESSION['user'] = $account;
         $_SESSION['loginstatus'] = true;
-        
+
+        // set encryption keys
+        getKeys();
+
         header('Location: ./user.php');
 
     }
