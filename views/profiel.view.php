@@ -46,7 +46,7 @@
                                             <input type="password" class="form-control" name="passwordChange">
                                         </div>
                                     </div>
-                                    <input class="btn btn-secondary" name="updateUser" type="submit" value="submit">
+                                    <input class="btn btn-secondary" name="updateUser" type="submit" value="Aanpassen">
                                 </form>
                             </div>
 

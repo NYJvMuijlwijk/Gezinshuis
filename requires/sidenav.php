@@ -18,6 +18,7 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="profiel.php">Profiel</a> -->
                 <!-- </div> -->
             </li>
+            <?php if($_SESSION['user']->roleid == '1'){ ?>
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Berichten">
                 <!-- <div class="row"> -->
@@ -25,6 +26,7 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="user_messages.php">Berichten</a> -->
                 <!-- </div> -->
             </li>
+            <?php } ?>
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Activiteiten">
                 <!-- <div class="row"> -->
@@ -32,6 +34,7 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Activiteiten</a> -->
                 <!-- </div> -->
             </li>
+            <?php if($_SESSION['user']->roleid == '1' || $_SESSION['user']->roleid == '2'){ ?>
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Behandelplannen">
                 <!-- <div class="row"> -->
@@ -39,6 +42,8 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Behandelplannen</a> -->
                 <!-- </div> -->
             </li>
+            <?php } ?>
+            <?php if($_SESSION['user']->roleid == '1'){ ?>
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Gebruikersprofielen">
                 <!-- <div class="row"> -->
@@ -46,6 +51,7 @@
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Gebruikersprofielen</a> -->
                 <!-- </div> -->
             </li>
+            <?php } ?>
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Media">
                 <!-- <div class="row"> -->
