@@ -1,6 +1,7 @@
 <?php
 // user need to be admin to read messages
 require "requires/help.php";
+
 if(verifyRole(1)) {
 ?>
 
