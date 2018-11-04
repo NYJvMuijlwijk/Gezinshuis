@@ -47,7 +47,7 @@
             <li class="nav-item" data-toggle="tooltip"
         data-placement="top" title="Gebruikersprofielen">
                 <!-- <div class="row"> -->
-                    <a class="nav-link js-scroll-trigger link-icon" href="#"><i class="fas fa-users"></i></a>
+                    <a class="nav-link js-scroll-trigger link-icon" href="gebruikers.php"><i class="fas fa-users"></i></a>
                     <!-- <a class="nav-link js-scroll-trigger link-item" href="#">Gebruikersprofielen</a> -->
                 <!-- </div> -->
             </li>
