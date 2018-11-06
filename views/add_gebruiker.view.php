@@ -1,4 +1,4 @@
-<section class="add_gebruiker">
+<section class="user">
     <div class="container-fluid content">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -61,3 +61,7 @@
                     </div><br>
                     <input class="btn btn-secondary" name="newUser" type="submit" value="Toevoegen">
                 </form>
+                </div>
+            </div>
+        </div>
+</section>
